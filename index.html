@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoodDay</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #07544f;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      width: 100%;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(6px);
+    }
+
+    .logo1 {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      height: 70px;
+      width: auto;
+      z-index: 6;
+    }
+
+    .navbar ul {
+      display: flex;
+      gap: 18px;
+      list-style: none;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #07544f;
+      font-weight: 600;
+      font-size: 17px;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: white;
+      background-color: #07544f;
+    }
+
+    /* Video */
+    .banner video {
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 15px;
+      z-index: 1;
+    }
+
+    /* Judul */
+    .content h1 {
+      position: absolute;
+      bottom: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 42px;
+      color: #07544f;
+      font-weight: 700;
+      z-index: 3;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Tombol */
+    button {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #07544f;
+      color: white;
+      border: none;
+      padding: 14px 45px;
+      font-size: 18px;
+      border-radius: 35px;
+      cursor: pointer;
+      transition: 0.3s;
+      z-index: 4;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      background-color: #0a6a63;
+      transform: translateX(-50%) scale(1.05);
+    }
+
+    /* ==== TAMPILAN MOBILE ==== */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .logo1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 60px;
+        margin-bottom: 8px;
+      }
+
+      .navbar ul {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .navbar ul li a {
+        font-size: 15px;
+        padding: 5px 10px;
+      }
+
+      .banner video {
+        width: 90%;
+        top: 160px;
+        border-radius: 10px;
+      }
+
+      .content h1 {
+        font-size: 28px;
+        bottom: 100px;
+        text-align: center;
+      }
+
+      button {
+        bottom: 20px;
+        padding: 10px 30px;
+        font-size: 16px;
+      }
+    }
+
+    /* ==== LAYAR KECIL BANGET (HP MINI) ==== */
+    @media (max-width: 480px) {
+      .navbar ul li a {
+        font-size: 13px;
+      }
+
+      .banner video {
+        width: 95%;
+        top: 140px;
+      }
+
+      .content h1 {
+        font-size: 24px;
+        bottom: 90px;
+      }
+
+      button {
+        font-size: 15px;
+        padding: 8px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <video autoplay loop muted playsinline>
+      <source src="GoodDay video ads (1).mp4" type="video/mp4">
+    </video>
+
+    <div class="navbar">
+      <img class="logo1" src="GoodDay2-removebg-preview.png" alt="GoodDay Logo">
+      <ul>
+        <li><a href="index.html"><u>home</u></a></li> 
+        <li><a href="profil.html"><u>profil</u></a></li>
+        <li><a href="galery.html"><u>galery</u></a></li>
+        <li><a href="kontak.html"><u>kontak</u></a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1>GoodDay</h1>
+    </div>
+
+    <button type="button">eksplor</button>
+  </div>
+</body>
+</html>

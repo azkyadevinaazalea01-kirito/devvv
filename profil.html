@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodDay Coffee</title>
+    <link href="stylesheet" rel="style.css">    
+    <style>
+        /* ===== Global ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: #07544f;
+        }
+
+        /* ===== Navbar ===== */
+        .navbar {
+            width: 100%;
+            position: relative;
+            padding: 20px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            height: 100px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #07544f;
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 8px 12px;
+            transition: 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: white;
+            background-color: #07544f;
+            border-radius: 25px;
+        }
+
+        /* ===== Marquee ===== */
+        marquee h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+        }
+
+        /* ===== H1 & Konten ===== */
+        h1, h3, p {
+            text-align: center;
+            margin: 10px 20px;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .image-row img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin: 20px 0;
+        }
+
+        .col-4 {
+            text-align: center;
+        }
+
+        .col-4 img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        /* ===== Foto Besar Bawah ===== */
+        .big-photo {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .big-photo img {
+            width: 90%;
+            max-width: 1200px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .logo {
+                height: 80px;
+                top: 15px;
+                left: 20px;
+            }
+
+            .col-4 img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .image-row img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <img class="logo" src="GoodDay3-removebg-preview.jpeg" alt="Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="galery.html">Galery</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </div>
+
+    <!-- Marquee -->
+    <marquee><h1>SELAMAT DATANG DI PERUSAHAAN ICHIGO</h1></marquee>
+
+    <!-- Tentang GoodDay -->
+    <h1>Tentang GoodDay</h1>
+    <h3>Coffee 101: GoodDay Coffee adalah merek kopi instan 3-in-1 yang praktis, menggabungkan kopi, gula, dan krimer dalam satu sachet.</h3>
+
+    <div class="image-row">
+        <img src="vanilalate.jpg" alt="Vanilla Latte">
+        <img src="capucino.jpg" alt="Cappuccino">
+        <img src="groovycookies.webp" alt="Groovy Cookies">
+        <img src="freeze.jpg" alt="Freeze">
+    </div>
+
+    <!-- Profil GoodDay -->
+    <h1>Profil GoodDay</h1>
+    <p>GoodDay adalah merek kopi instan dari Indonesia.</p>
+
+    <div class="container">
+        <div class="col-4">
+            <img src="halal.jpg" alt="Halal & BPOM">
+            <h3>Halal & BPOM</h3>
+            <h6>Kementerian perdagangan Direktorat jenderal perlindungan konsumen dan tertib niaga.</h6>
+        </div>
+        <div class="col-4">
+            <img src="GoodDay.png" alt="Coffie">
+            <h3>Coffie</h3>
+            <h5>Produknya adalah kopi instan 3-in-1 yang terdiri dari kopi, gula, dan krimer dalam satu sachet praktis.</h5>
+        </div>
+        <div class="col-4">
+            <img src="local.jpg" alt="Local & GlobalExpert">
+            <h3>Local & GlobalExpert</h3>
+            <h5>Jasa membuat konten berupa gambar, video, atau teks untuk promosi bisnis digital.</h5>
+        </div>
+        <div class="col-4">
+            <img src="alko.jpg" alt="Alcohol Free">
+            <h3>Alcohol Free</h3>
+            <h5>There is no indication of free alcoholic versions of Good Day coffee.</h5>
+        </div>
+    </div>
+
+    <!-- FOTO BESAR DI BAWAH -->
+    <div class="big-photo">
+        <img src="10.jpg" alt="Banner GoodDay Besar">
+    </div>
+</body>
+</html>

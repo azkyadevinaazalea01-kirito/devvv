@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GoodDay Coffee</title>
+<link href="stylesheet" rel="style.css">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        background-color: #fafafa;
+        color: #07544f;
+        text-align: center;
+    }
+
+    /* Navbar */
+    .navbar {
+        width: 100%;
+        padding: 20px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        height: 100px;
+        width: auto;
+    }
+
+    .navbar ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #07544f;
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 8px 12px;
+        transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+        color: white;
+        background-color: #07544f;
+        border-radius: 25px;
+    }
+
+    h1, h3, p {
+        margin: 20px 0;
+    }
+
+    /* Image rows */
+    .image-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .image-row img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    /* === Bagian THE COFFEE Vertikal === */
+    .container {
+        display: flex;
+        flex-direction: column; /* vertikal */
+        align-items: center;
+        gap: 40px;
+        margin: 40px 0;
+    }
+
+    .col-4 {
+        width: 80%;
+        max-width: 400px;
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .col-4:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+
+    .col-4 img {
+        width: 180px;
+        height: 180px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+
+    .col-4 h3 {
+        margin: 10px 0 5px;
+        color: #07544f;
+    }
+
+    .col-4 h5, .col-4 h6 {
+        color: #333;
+        font-weight: normal;
+    }
+
+    @media (max-width: 768px) {
+        .image-row img {
+            width: 150px;
+            height: 150px;
+        }
+        .col-4 img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo" src="GoodDayy-removebg-preview.jpg" alt="Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="galery.html">Galery</a></li>
+            <li class="active"><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </div>
+
+    <h1>Shop Our Product</h1>
+    <h1>PRODUCT</h1>
+    <h3>
+        Coffee: GoodDay Coffee adalah merek kopi instan dari Indonesia yang dikenal dengan produk kopi 3-in-1 yang praktis. Produk ini menggabungkan kopi, gula, dan krimer dalam satu sachet, sehingga mudah disiapkan dan cocok untuk berbagai momen. GoodDay Coffee menawarkan berbagai varian rasa, termasuk cappuccino, mocha, dan vanilla latte, yang dapat dinikmati kapan saja dan di mana saja. Merek ini juga dikenal dengan slogan "Karna Hidup Punya Banyak Rasa" yang mencerminkan komitmen mereka untuk memberikan pengalaman kopi yang beragam dan berkualitas tinggi.
+    </h3>
+
+    <div class="image-row">
+        <img src="GoodDay1.jpg" alt="GoodDay1">
+        <img src="GoodDay2.jpg" alt="GoodDay2">
+        <img src="GoodDay3.jpg" alt="GoodDay3">
+        <img src="GoodDay4.jpg" alt="GoodDay4">
+    </div>
+
+    <h1>THE COFFEE</h1>
+    <p>THE COFFEE.</p>
+
+    <!-- BAGIAN COFFEE VERTIKAL -->
+    <div class="container">
+        <div class="col-4">
+            <img src="1.jpg" alt="Vanilla Latte">
+            <h3>Vanilla Latte</h3>
+            <h6>Rasa kopi yang lembut dengan sentuhan vanila.</h6>
+        </div>
+        <div class="col-4">
+            <img src="2.jpg" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <h5>Kombinasi sempurna antara espresso, susu, dan foam.</h5>
+        </div>
+        <div class="col-4">
+            <img src="3.jpg" alt="Groovy Cookies">
+            <h3>Groovy Cookies</h3>
+            <h5>Kopi dengan rasa kue yang menggugah selera.</h5>
+        </div>
+        <div class="col-4">
+            <img src="4.jpg" alt="Freeze">
+            <h3>Freeze</h3>
+            <h5>Kopi dingin yang menyegarkan di hari panas.</h5>
+        </div>
+    </div>
+
+    <h1>Tentang Coffee GoodDay</h1>
+    <h3>
+        GoodDay Coffee adalah merek kopi instan yang terkenal di Indonesia, menawarkan produk kopi 3-in-1 yang praktis dan mudah disiapkan. Dengan berbagai varian rasa seperti cappuccino, mocha, dan vanilla latte, GoodDay Coffee memberikan pengalaman kopi yang beragam dan berkualitas tinggi. Merek ini dikenal dengan slogan "Karna Hidup Punya Banyak Rasa," mencerminkan komitmen mereka untuk menghadirkan cita rasa kopi yang unik dan menyenangkan bagi para penikmatnya.
+    </h3>
+
+    <div class="image-row">
+        <img src="cofe1.jpg" alt="Cofe1">
+        <img src="cofe2.jpg" alt="Cofe2">
+        <img src="cofe3.jpg" alt="Cofe3">
+        <img src="cofe4.jpg" alt="Cofe4">
+    </div>
+
+    <h1>GoodDay Gift Vouchers</h1>
+    <h3>Beli vouchers potongan harga untuk diri kamu sendiri</h3>
+
+    <div class="image-row">
+        <img src="voucer1.jpg" alt="Voucer1">
+        <img src="voucer2.jpg" alt="Voucer2">
+    </div>
+</body>
+</html>

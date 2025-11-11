@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak GoodDay</title>
+<link href="stylesheet" rel="style.css">
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #07544f;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    height: 100px;
+    width: auto;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #07544f;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: white;
+    background-color: #07544f;
+    border-radius: 25px;
+}
+
+h1, h3, p {
+    margin: 20px 0;
+}
+
+/* Image rows */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-row img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* === Bagian THE COFFEE Vertikal === */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.col-4 {
+    width: 80%;
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.col-4 img {
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.col-4 h3 {
+    margin: 10px 0 5px;
+    color: #07544f;
+}
+
+.col-4 h5, .col-4 h6 {
+    color: #333;
+    font-weight: normal;
+}
+
+/* FOOTER (sosmed) */
+footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    background-color: #07544f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffd700;
+    transform: scale(1.05);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .image-row img {
+        width: 150px;
+        height: 150px;
+    }
+    .col-4 img {
+        width: 150px;
+        height: 150px;
+    }
+    footer a {
+        font-size: 16px;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <img class="logo" src="GoodDayy4-removebg-preview.jpg" alt="Logo">
+    <ul>
+        <li><a href="index.html"><u>Home</u></a></li>
+        <li><a href="profil.html"><u>profil</u></a></li>
+        <li><a href="galery.html"><u>Galery</u></a></li>
+        <li class="active"><a href="kontak.html"><u>kontak</u></a></li>
+    </ul>
+</div>
+
+<h1>HUBUNGI KAMI</h1>
+<p>KARNA HIDUP PUNYA BANYAK RASA</p>
+
+<div class="container">
+    <div class="col-4">
+        <h4><img src="whatsapp.jpg" height="100" width="100"><a href="index.html"></a></h4>
+        <h3>WHATSAPP</h3>
+        <h6>0831-3723-2380.</h6>
+    </div>
+    <div class="col-4">
+        <h4><img src="instagram.webp" height="100" width="100"><a href="index.html"></a></h4>
+        <h3>INSTAGRAM</h3>
+        <h5>@GoodDayCoffeeID</h5>
+    </div>
+    <div class="col-4">
+        <h4><img src="email.png" height="100" width="100"><a href="index.html"></a></h4>
+        <h3>EMAIL</h3>
+        <h5>GoodDay Coffee Indonesia</h5>
+    </div>
+</div>
+
+<img id="map" src="lokasi2.png" alt="Lokasi">
+<h1>GoodDayOfficial</h1>
+
+</body>
+</html>
